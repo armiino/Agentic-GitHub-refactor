@@ -2,7 +2,7 @@
 
 # Product Backlog — einrichtung-fresh
 
-> Version: 5 · Stand: 2026-08-21 20:24 UTC · PBIs: 49 · Fingerabdruck: cc2a5f4d357982d6
+> Version: 6 · Stand: 2026-08-21 20:57 UTC · PBIs: 49 · Fingerabdruck: 8115c09ae050d005
 > Projektion aus der Projektwahrheit (Core) — GENERIERT, nie von Hand pflegen.
 
 ## Produktziel und Lösungsrahmen (FC-01)
@@ -16,7 +16,7 @@
 | PBI | Titel | Status | Klärung/Blocker | Prio | Schätzung | Requirements | Issue |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | PBI-002 | Interne Accounts mit Basisrollen bereitstellen und Selbstregistrierung für Angehörige per Einladungscode mit fester Einrichtungszuordnung ermöglichen | active | — | — | — | L3-REQ-009, L3-REQ-010, REQ-06, REQ-07, REQ-41, REQ-65, REQ-84 | #2 |
-| PBI-003 | Rechtemodell für Einrichtungs-Personal, Angehörige und Leitung festlegen | active | — | — | — | REQ-08, REQ-09, REQ-10 | #3 |
+| PBI-003 | Rechtemodell für Einrichtungs-Personal, Angehörige und Leitung sowie Einrichtungsgrenzen in der Suche festlegen | active | — | — | — | REQ-08, REQ-09, REQ-10 | #3 |
 | PBI-004 | Ersteller- und Änderungsnachweis für Inhalte erfassen | active | — | — | — | L3-REQ-001 | #4 |
 
 ## Login und Einstieg (FC-03)
@@ -99,7 +99,7 @@
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | PBI-027 | Umfang der Dokumentationsintegration und Datenübernahme festlegen | needs_clarify | Klärung offen | — | — | L3-REQ-014, REQ-44, REQ-48, REQ-49, REQ-62 | #27 |
 | PBI-028 | Übersicht der Medikamenten-Einnahmen für freigegebene Angehörige mit optionaler Bemerkungsanzeige als Monatsübersicht der letzten dreißig Tage bereitstellen; überfällige, noch nicht dokumentierte Gaben für Pflegende deutlich rot hervorheben | active | — | — | — | REQ-42, REQ-80, REQ-86 | #28 |
-| PBI-032 | Es soll eine Übergabe-Notiz pro Schicht geben, die der nächsten Schicht beim Öffnen der Ap... | needs_clarify | Klärung offen | — | — | REQ-61, REQ-77 | #32 |
+| PBI-032 | Es soll eine Übergabe-Notiz pro Schicht geben, die bis zur Archivierung bearbeitet werden kann und deren letzte gültige Fassung nachvollziehbar ist | active | — | — | — | REQ-61, REQ-77, REQ-92 | #32 |
 | PBI-033 | Übergabe-Notizen sollen nach dreißig Tagen automatisch archiviert werden; archivierte Notizen bleiben weiterhin auffindbar | needs_clarify | Klärung offen | — | — | REQ-85 | #33 |
 | PBI-041 | Es ist zu klären, ob Aufgabenverfolgung oder Terminplanung als eigene organisatorische Anf... | needs_clarify | Klärung offen | — | — | REQ-73 | — |
 | PBI-045 | Tages-Zusammenfassung dokumentierter Medikamenten-Gaben am Schichtende anzeigen | active | — | — | — | REQ-81 | #43 |
@@ -129,7 +129,7 @@
 
 | PBI | Titel | Status | Klärung/Blocker | Prio | Schätzung | Requirements | Issue |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| PBI-046 | Besuche bei der Bezugsperson mit Datum und Uhrzeit vorab ankündigen | active | — | — | — | REQ-82 | #44 |
+| PBI-046 | Besuche bei der Bezugsperson mit Datum und Uhrzeit vorab ankündigen, ändern und absagen | active | — | — | — | REQ-82, REQ-91 | #44 |
 | PBI-047 | Übersicht der angekündigten Besuche der nächsten 14 Tage für Pflegende mit Kennzeichnung erledigter oder inaktiver Besuche bereitstellen | active | — | — | — | REQ-83, REQ-89, REQ-90 | #45 |
 | PBI-048 | Angekündigte Besuche bestätigen oder ablehnen | active | — | — | — | REQ-87 | — |
 | PBI-049 | Angehörige am Vortag per Push an bestätigte Besuche erinnern | active | — | — | — | REQ-88 | — |
