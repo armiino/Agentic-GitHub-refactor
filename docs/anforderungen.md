@@ -2,7 +2,7 @@
 
 # Anforderungsdokument — einrichtung-fresh
 
-> Version: 8 · Stand: 2026-08-21 20:24 UTC · Core: 230 Items · Fingerabdruck: cc2a5f4d357982d6
+> Version: 9 · Stand: 2026-08-21 20:57 UTC · Core: 233 Items · Fingerabdruck: 8115c09ae050d005
 > Projektion aus der Projektwahrheit (Core) — GENERIERT, nie von Hand pflegen; jede Fassung entspricht exakt einem autorisierten Wahrheits-Stand.
 
 ## 1. Funktionale Anforderungen
@@ -120,6 +120,7 @@
 - Pflegende müssen am Ende ihrer Schicht eine Tages-Zusammenfassung aller von ihnen dokumentierten Medikamenten-Gaben sehen können, damit sie vor der Übergabe prüfen können, ob alles erfasst ist. (REQ-81)
 - Übergabe-Notizen werden nach dreißig Tagen automatisch archiviert; die bisherige Vierzehn-Tage-Regel gilt nicht mehr. Archivierte Notizen bleiben weiterhin auffindbar. (REQ-85)
 - Pflegende müssen in der Übersicht der Medikamenten-Einnahmen überfällige, noch nicht dokumentierte Gaben deutlich rot hervorgehoben sehen. (REQ-86)
+- Übergabe-Notizen müssen bis zur Archivierung bearbeitet werden können; bei jeder Bearbeitung ist die zuletzt gültige Fassung mit Änderungszeitpunkt und bearbeitendem Account nachvollziehbar zu halten. (REQ-92)
 
 ### Forschung, Anforderungsanalyse und Pilotbewertung (FC-13A)
 
@@ -144,6 +145,7 @@
 - Angehörige sollen einmal am Vortag um 18 Uhr per Push-Mitteilung an ihren bestätigten Besuch erinnert werden, damit Besuche nicht vergessen werden. (REQ-88, v2)
 - Die Übersicht der angekündigten Besuche soll die Besuche der nächsten 14 Tage anzeigen. (REQ-89)
 - Bereits erledigte oder nicht mehr aktive angekündigte Besuche sollen in der Übersicht durchgestrichen und ausgegraut dargestellt werden. (REQ-90)
+- Angehörige müssen eine bereits angefragte oder bestätigte Besuchsankündigung bis zum Beginn des Besuchs ändern oder absagen können; nach einer Änderung muss der Besuch erneut den Status „angefragt“ erhalten, und nach einer Absage darf keine Erinnerung mehr versendet werden. (REQ-91)
 
 ### Ohne Feature-Zuordnung
 
@@ -176,7 +178,7 @@
 - Es muss mindestens die Rollen Admin und User geben; Admins verwalten Accounts und Rechte, User können Inhalte hinzufügen, aber nichts löschen. (ARCH-08)
 - Neben Mitarbeitern sollen auch Angehörige Zugriff auf die App erhalten und Inhalte beziehungsweise Wissen beitragen können; unterschiedliche Rechte sind dabei vorgesehen, aber noch nicht konkret ausformuliert. (ARCH-09)
 - Zusätzlich soll es einen Bewohner-Account geben, der nur das eigene Profil sehen darf und nur eingeschränkte Funktionen nutzen kann, insbesondere Zugriff auf About Me und gegebenenfalls das Hinzufügen eigener Bilder. (ARCH-10)
-- Mitarbeiter dürfen nicht einrichtungsübergreifend auf alle Profile zugreifen, sondern nur auf Profile der Einrichtung, in der sie tätig sind; die technische Umsetzung dieser Beschränkung ist noch zu erarbeiten. (ARCH-11)
+- Für die einrichtungsgebundene Stichwortsuche über alle Bewohnerprofile muss ein serverseitiger Suchrahmen festgelegt werden: Suchindizes dürfen nur Inhalte der jeweils zugeordneten Einrichtung enthalten oder nur innerhalb dieser Einrichtung abfragbar sein, damit Suchtreffer die Einrichtungsgrenze technisch nicht umgehen. (ARCH-11)
 - Vor Nutzung von Bildern in der App müssen Datenschutzfragen und Einwilligungen der Angehörigen beziehungsweise Berechtigten geklärt werden, auch für Testbilder. (ARCH-14)
 - Nach dem Login soll eine Profilübersicht mit anklickbarer Liste der sichtbaren Bewohnerprofile angezeigt werden. (ARCH-15)
 - Auf der Profilübersicht soll eine Suchleiste vorhanden sein, um Profile schnell nach Namen zu finden. (ARCH-16)
@@ -221,3 +223,4 @@ _Voller Architektur-Stand inkl. Entscheidungen (ADRs): docs/architecture.md_
 - Die PAT-Rotation nach der Thesis könnte vergessen werden. (DEC-010)
 - Wo und wie werden Bilder und Videos für About Me und Kommunikationsseiten technisch gespeichert und ausgeliefert? (DEC-011)
 - SQL Injection beim Login. (DEC-012)
+- Wie können Angehörige ihre bereits angekündigten Besuche in der App selbst einsehen und den aktuellen Status eines Besuchs nachvollziehen, insbesondere ob er noch ausstehend, bestätigt, abgelehnt oder bereits erledigt ist? (DEC-013)
