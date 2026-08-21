@@ -2,7 +2,7 @@
 
 # Anforderungsdokument — einrichtung-fresh
 
-> Version: 6 · Stand: 2026-08-21 18:23 UTC · Core: 226 Items · Fingerabdruck: 3ac295735cdc507a
+> Version: 8 · Stand: 2026-08-21 20:24 UTC · Core: 230 Items · Fingerabdruck: cc2a5f4d357982d6
 > Projektion aus der Projektwahrheit (Core) — GENERIERT, nie von Hand pflegen; jede Fassung entspricht exakt einem autorisierten Wahrheits-Stand.
 
 ## 1. Funktionale Anforderungen
@@ -217,3 +217,7 @@ _Voller Architektur-Stand inkl. Entscheidungen (ADRs): docs/architecture.md_
 - Wie lange sollen einnahmebezogene Bemerkungen bei der Medikamenten-Gabe aufbewahrt werden? (DEC-004)
 - Es muss geklärt werden, ob Angehörige ihre Push-Erinnerungen selbst deaktivieren können sollen. (DEC-006)
 - Wie wird das Missbrauchsrisiko von Einladungscodes für Angehörige begrenzt, insbesondere hinsichtlich Weitergabe, Mehrfachnutzung, Ablauf, falscher Zuordnung zur Einrichtung und nachträglicher Sperrung bereits damit erzeugter Zugänge? (DEC-007)
+- Wie wird die Einrichtungsgrenze technisch und serverseitig durchgesetzt, sodass Mitarbeitende nur Profile ihrer eigenen Einrichtung sehen und bearbeiten können? (DEC-009)
+- Die PAT-Rotation nach der Thesis könnte vergessen werden. (DEC-010)
+- Wo und wie werden Bilder und Videos für About Me und Kommunikationsseiten technisch gespeichert und ausgeliefert? (DEC-011)
+- SQL Injection beim Login. (DEC-012)
