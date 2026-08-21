@@ -2,7 +2,7 @@
 
 # Product Backlog — einrichtung-fresh
 
-> Version: 2 · Stand: 2026-08-21 17:35 UTC · PBIs: 49 · Fingerabdruck: 4fba377f92bb5de6
+> Version: 3 · Stand: 2026-08-21 18:23 UTC · PBIs: 49 · Fingerabdruck: 3ac295735cdc507a
 > Projektion aus der Projektwahrheit (Core) — GENERIERT, nie von Hand pflegen.
 
 ## Produktziel und Lösungsrahmen (FC-01)
