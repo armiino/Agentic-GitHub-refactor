@@ -2,7 +2,7 @@
 
 # Anforderungsdokument — einrichtung-fresh
 
-> Version: 5 · Stand: 2026-08-21 17:35 UTC · Core: 226 Items · Fingerabdruck: 4fba377f92bb5de6
+> Version: 6 · Stand: 2026-08-21 18:23 UTC · Core: 226 Items · Fingerabdruck: 3ac295735cdc507a
 > Projektion aus der Projektwahrheit (Core) — GENERIERT, nie von Hand pflegen; jede Fassung entspricht exakt einem autorisierten Wahrheits-Stand.
 
 ## 1. Funktionale Anforderungen
