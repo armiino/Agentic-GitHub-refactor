@@ -2,7 +2,7 @@
 
 # Anforderungsdokument — einrichtung-fresh
 
-> Version: 14 · Stand: 2026-08-22 14:49 UTC · Core: 236 Items · Fingerabdruck: 3b15badb1b6f177a
+> Version: 15 · Stand: 2026-08-22 16:10 UTC · Core: 237 Items · Fingerabdruck: a51c89ebb3d2867a
 > Projektion aus der Projektwahrheit (Core) — GENERIERT, nie von Hand pflegen; jede Fassung entspricht exakt einem autorisierten Wahrheits-Stand.
 
 ## 1. Funktionale Anforderungen
@@ -209,6 +209,7 @@
 - Für Push-Benachrichtigungen an Angehörige und Pflegende ist Firebase Cloud Messaging als technische Umsetzung festgelegt. (ARCH-46)
 - Für die revisionssichere Protokollierung von Einsichtnahmen muss ein unveränderlicher Audit-Log-Rahmen festgelegt werden: Zugriffsereignisse werden serverseitig als append-only protokolliert, nachträgliche Änderungen oder Löschungen sind fachlich und technisch ausgeschlossen, und das Leserecht auf diese Protokolle bleibt strikt auf Admins beschränkt. (ARCH-47)
 - Für Besuchserinnerungen am Vortag um 18 Uhr muss ein serverseitiger Benachrichtigungsrahmen festgelegt werden: Die Erinnerung wird aus dem bestätigten Besuchsstatus heraus zentral geplant, bei Statusänderung oder Absage wieder zurückgezogen und darf nicht von der lokalen Verfügbarkeit oder den Hintergrundrestriktionen des Geräts der Angehörigen abhängen. (ARCH-48)
+- Ergänzend zu ARCH-11 gilt für die allgemeine serverseitige Durchsetzung der Einrichtungsgrenze: Jede Collection trägt die Einrichtungs-ID, und jede Firestore Security Rule prüft diese ID gegen die dem angemeldeten Benutzer zugeordnete Einrichtungs-ID. (ARCH-50)
 
 _Voller Architektur-Stand inkl. Entscheidungen (ADRs): docs/architecture.md_
 
