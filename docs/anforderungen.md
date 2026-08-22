@@ -2,7 +2,7 @@
 
 # Anforderungsdokument — einrichtung-fresh
 
-> Version: 10 · Stand: 2026-08-22 11:24 UTC · Core: 235 Items · Fingerabdruck: d1573965f2667726
+> Version: 11 · Stand: 2026-08-22 12:18 UTC · Core: 235 Items · Fingerabdruck: 4cdda25222f8f43a
 > Projektion aus der Projektwahrheit (Core) — GENERIERT, nie von Hand pflegen; jede Fassung entspricht exakt einem autorisierten Wahrheits-Stand.
 
 ## 1. Funktionale Anforderungen
@@ -224,5 +224,4 @@ _Voller Architektur-Stand inkl. Entscheidungen (ADRs): docs/architecture.md_
 - Wo und wie werden Bilder und Videos für About Me und Kommunikationsseiten technisch gespeichert und ausgeliefert? (DEC-011)
 - SQL Injection beim Login. (DEC-012)
 - Wie können Angehörige ihre bereits angekündigten Besuche in der App selbst einsehen und den aktuellen Status eines Besuchs nachvollziehen, insbesondere ob er noch ausstehend, bestätigt, abgelehnt oder bereits erledigt ist? (DEC-013)
-- Brauchen wir fuer interne Events einen Message-Broker? (DEC-014)
 - Welches Logging-Framework nutzen wir serverseitig? (DEC-015)
