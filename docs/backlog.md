@@ -2,7 +2,7 @@
 
 # Product Backlog — einrichtung-fresh
 
-> Version: 10 · Stand: 2026-08-22 14:09 UTC · PBIs: 49 · Fingerabdruck: 4feb423dbb444b0f
+> Version: 11 · Stand: 2026-08-22 21:46 UTC · PBIs: 49 · Fingerabdruck: ccdb9ef1bd7d103c
 > Projektion aus der Projektwahrheit (Core) — GENERIERT, nie von Hand pflegen.
 
 ## Produktziel und Lösungsrahmen (FC-01)
@@ -40,7 +40,7 @@
 | PBI-009 | Profilübersicht mit Suche und öffnbaren Profilkarten bereitstellen | active | — | — | — | REQ-07, REQ-09, REQ-13, REQ-16, REQ-17, REQ-18 | #9 |
 | PBI-010 | Neue Bewohnerprofile mit Basisdaten und Dublettenprüfung über Nachname und Geburtsdatum anlegen | active | — | — | — | L3-REQ-008, REQ-45, REQ-59 | #10 |
 | PBI-011 | Profilübersicht um Sortierung, Profilstatus, Neu-Markierungen und Dringlichkeitssortierung erweitern | active | — | — | — | L3-REQ-006, L3-REQ-007, L3-REQ-013, REQ-78 | #11 |
-| PBI-031 | Es muss eine Suche nach Stichworten über alle Bewohnerprofile hinweg geben. | needs_clarify | Klärung offen | — | — | REQ-60 | #31 |
+| PBI-031 | Es muss eine serverseitige, einrichtungsgebundene Suche über Bewohnerprofile im eigenen Berechtigungsrahmen geben. | active | — | — | — | REQ-60 | #31 |
 
 ## Profil-Detail und Schnellzugriff (FC-06)
 
