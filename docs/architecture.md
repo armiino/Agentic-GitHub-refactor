@@ -30,6 +30,8 @@
   - ADR: ADR-0002 (accepted)
 - **ARCH-48** — Für Besuchserinnerungen am Vortag um 18 Uhr muss ein serverseitiger Benachrichtigungsrahmen festgelegt werden: Die Erinnerung wird aus dem b…
   - ADR: ADR-0003 (accepted)
+- **ARCH-49** — Für interne Events wird bewusst kein separater Message-Broker eingesetzt. Events laufen direkt im Server-Backend. Ein externer Broker wird e…
+  - ADR: ADR-0005 (accepted)
 
 ## Rahmen (constraint)
 
