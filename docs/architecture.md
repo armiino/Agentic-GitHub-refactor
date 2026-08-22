@@ -32,6 +32,8 @@
   - ADR: ADR-0003 (accepted)
 - **ARCH-49** — Für interne Events wird bewusst kein separater Message-Broker eingesetzt. Events laufen direkt im Server-Backend. Ein externer Broker wird e…
   - ADR: ADR-0005 (accepted)
+- **ARCH-50** — Ergänzend zu ARCH-11 gilt für die allgemeine serverseitige Durchsetzung der Einrichtungsgrenze: Jede Collection trägt die Einrichtungs-ID, u…
+  - ADR: ADR-0006 (accepted)
 
 ## Rahmen (constraint)
 
@@ -113,6 +115,8 @@
   - bindet: PBI-034 (Jede Einsichtnahme in Bewohnerdaten muss revisions…)
 - **ARCH-48** — Für Besuchserinnerungen am Vortag um 18 Uhr muss ein serverseitiger Benachrichtigungsrahmen festgelegt werden: Die Erinnerung wird aus dem b…
   - bindet: PBI-049 (Angehörige am Vortag per Push an bestätigte Besuch…)
+- **ARCH-50** — Ergänzend zu ARCH-11 gilt für die allgemeine serverseitige Durchsetzung der Einrichtungsgrenze: Jede Collection trägt die Einrichtungs-ID, u…
+  - bindet: PBI-002 (Interne Accounts mit Basisrollen bereitstellen und…) · PBI-003 (Rechtemodell für Einrichtungs-Personal, Angehörige…)
 
 ## Arbeit (work)
 
